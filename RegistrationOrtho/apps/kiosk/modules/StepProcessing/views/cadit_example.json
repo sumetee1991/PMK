@@ -1,0 +1,41 @@
+[{
+        "pid": "9090909090909",
+        "hn": "99999/99",
+        "periodStart":null,
+        "periodEnd": null,
+        "policyHolderId": "03",
+        "policyHolderName": "ประกันสังคมรพ.รร6"
+    },
+    {
+        "pid": "9090909090909",
+        "hn": "99999/99",
+        "periodStart": "2019-11-01",
+        "periodEnd": "2019-11-22",
+        "policyHolderId": "49",
+        "policyHolderName": "ตรวจสุขภาพเจ้าหน้าที่สิทธิประกันสังคม รพ.รร.6"
+    },
+    {
+        "pid": "9090909090909",
+        "hn": "99999/99",
+        "periodStart": null,
+        "periodEnd": null,
+        "policyHolderId": "52",
+        "policyHolderName": "จ่ายตรงกรมบัญชีกลาง (ผู้ป่วยนอก)"
+    },
+    {
+        "pid": "9090909090909",
+        "hn": "99999/99",
+        "periodStart": null,
+        "periodEnd": null,
+        "policyHolderId": "53",
+        "policyHolderName": "ชำระเงินเอง"
+    },
+    {
+        "pid": "9090909090909",
+        "hn": "99999/99",
+        "periodStart": null,
+        "periodEnd": null,
+        "policyHolderId": "22",
+        "policyHolderName": "ทหารผ่านศึก"
+    }
+]

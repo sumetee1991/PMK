@@ -1,0 +1,64 @@
+
+/* CSS Language Selector */
+/*Header อังกฤษ : Lato
+Body  อังกฤษ : Lato
+Header ไทย: Pridi 
+Body ไทย : CS Prajad   (ใช้ Bold (ตัวหนา))
+ช่อง search อังกฤษ : Lato (ใช้ Italic(ตัวเอียง),ตัวบาง)
+ช่อง search ไทย : CS Prajad  (ใช้ Italic(ตัวเอียง),ตัวบาง)*/
+
+/*Header Main Font-Face(English) : Lato*/
+@font-face { 
+	font-family: HeaderFont;
+	src: url('Lato-Regular.ttf');
+}
+/*Header Thai Font-Face : Pridi */
+@font-face {
+	font-family: HeaderFont;
+	src: url('Pridi-Regular.ttf');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Body Main Font-Face(English) : Lato*/
+@font-face { 
+	font-family: BodyFont;
+	src: url('Lato-Regular.ttf');
+}
+/*Body Thai Font-Face : CS Prajad Bold */
+@font-face {
+	font-family: BodyFont;
+	src: url('CSPraJad-bold.otf');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Input Main Font-Face(English) : Lato Italic Thin*/
+@font-face { 
+	font-family: InputFont;
+	src: url('Lato-ThinItalic.ttf');
+}
+/*Input Thai Font-Face : CS Prajad Italic Thin (Doesn't Exist So Use ItalicRegular Instead) */
+@font-face {
+	font-family: InputFont;
+	src: url('CSPraJad-Italic.otf');
+	unicode-range: U+0E00-U+0E7F;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'HeaderFont' !important;
+}
+
+body{
+	font-family: 'BodyFont' !important;
+}
+
+input{
+	font-family: 'InputFont' !important;	
+}
+input[type=text]::-webkit-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]:-ms-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]::placeholder {
+	font-family: 'InputFont' !important;
+}

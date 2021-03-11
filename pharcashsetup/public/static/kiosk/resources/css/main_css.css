@@ -1,0 +1,217 @@
+.slide {
+    display:none;
+}
+
+body{
+    margin: 0px !important;
+    height: 100vh;
+}
+p{
+    display: block;
+    margin: auto 0;
+}
+p.HeadTH{
+    font-family: 'TH Sarabun New Bold', 'TH Sarabun New Regular', 'TH Sarabun New';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 68px;       
+    color: #FFFFFF;
+    float: left;  
+}
+p.HeadEN{
+    font-family: 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+    float: left;
+}
+
+p.Link{
+    font-family: 'Kanit Bold', 'Kanit Regular', 'Kanit';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #E6E6E6;
+}
+button{    
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.main-div{
+    border-width: 0px;
+    height: 100vh;
+
+    width: 100%;
+    background: inherit;
+    background-color: rgba(46, 204, 113, 1);
+    border: none;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;            
+}
+.head-div{
+    border-width: 0px;
+    width: 100%;
+    height: 207px;
+    background: inherit;
+    background-color: rgba(39, 174, 96, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 0px;
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.349019607843137);
+}
+.head-div > img{
+    width: 164px;
+    height: 190px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+.bd_div1 > input{
+    width: 579px;
+    height: 69px;
+    background: inherit;
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(39, 174, 96, 1);
+    border-radius: 12px;
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349019607843137);
+    font-family: 'TH Sarabun New Bold', 'TH Sarabun New Regular', 'TH Sarabun New';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #0B5F32;
+}
+
+.footer-div{
+    background-color: #2ecc71;
+}
+.footer-div >.ft_div1 > img{
+    height:100%;
+    width:100%;
+}
+
+.ft_sty > span{
+
+    font-family: 'TH Sarabun New Bold', 'TH Sarabun New Regular', 'TH Sarabun New';
+    border-width: 0px;
+    white-space: nowrap;
+    text-transform: none;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.ft_sty{
+    position: absolute;
+    bottom: 0;
+    display: table;
+    width: 100%;height: 80px; 
+    background-color: rgb(39, 174, 96);
+}
+
+.ft_sty span {
+    vertical-align:middle;
+    display: table-cell;
+    padding-right: 20px;
+}
+
+.sli_img{
+    width: 100%;
+    height: 100%
+
+}
+
+.logo{
+    padding:1em 0em 0em 3em;
+}
+.p_1{
+    padding: 0.1em; margin-top:0.5em;
+}
+.p_2{
+    padding: 0.1em; margin-top:-2.5em;
+}
+
+@media only screen and (min-width: 1500px) {
+  .logo {
+        margin-left: 24%;
+  }
+  .p_1{
+        margin-right: 25%;
+  }
+  .p_2{
+        margin-right: 25%;
+  }
+}
+
+/*/////////////// page2 /////////////////*/
+.input_group > input{
+    background-color: transparent;
+    border-color: none;
+    border-style: none;
+    border-bottom-color: #FFFFFF;
+    border-bottom-style: solid;
+}
+.input_group > span{
+    font-family: 'TH Sarabun New Bold', 'TH Sarabun New Regular', 'TH Sarabun New';
+    font-weight: 700;
+    font-size: 30px;      
+    color: #FFFFFF;
+}
+/*/////////////////////////////////////////*/
+
+
+
+
+/*///// page5 ///////*/
+p.HeadTH_p5{
+    font-family: 'TH Sarabun New Bold', 'TH Sarabun New Regular', 'TH Sarabun New';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;       
+    color: #464646;
+    float: left;  
+    padding-top: 10px;
+}
+p.HeadEN_p5{
+    font-family: 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #464646;
+    float: left;
+}
+
+.div_cnt{
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*.p_cnt{
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}*/
+/*///// page5 ///////*/

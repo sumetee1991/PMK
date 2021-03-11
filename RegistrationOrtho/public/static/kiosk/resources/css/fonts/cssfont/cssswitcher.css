@@ -1,0 +1,77 @@
+
+/* CSS Language Selector */
+/*
+Management (Operator Software)  11/11
+Eng Header: Lato Regular
+ไทย Header: Pridi Regular
+Eng Body: Pridi
+ไทย Body: CS Prajad Bold
+** โดยเลขคิวในทุกจุดจะเป็น Lato Bold
+*/
+
+/*Header Main Font-Face(English) : Lato*/
+@font-face { 
+	font-family: HeaderFont;
+	src: url('Lato-Regular.ttf');
+}
+/*Header Thai Font-Face : Pridi */
+@font-face {
+	font-family: HeaderFont;
+	src: url('Pridi-Regular.ttf');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Body Main Font-Face(English) : Lato */
+@font-face { 
+	font-family: BodyFont;
+	src: url('Lato-Regular.ttf');
+}
+/*Body Thai Font-Face : CS Prajad Bold */
+@font-face {
+	font-family: BodyFont;
+	src: url('CSPraJad-bold.otf');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Input Main Font-Face(English) : Lato Italic Thin*/
+@font-face { 
+	font-family: InputFont;
+	src: url('Lato-ThinItalic.ttf');
+}
+/*Input Thai Font-Face : CS Prajad Italic Thin (Doesn't Exist So Use ItalicRegular Instead) */
+@font-face {
+	font-family: InputFont;
+	src: url('CSPraJad-Italic.otf');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*QueueNumber Font-Face : Lato Bold */
+@font-face { 
+	font-family: QueueNumber;
+	src: url('Lato-Bold.ttf');
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'HeaderFont' !important;
+}
+
+body{
+	font-family: 'BodyFont' !important;
+}
+
+input{
+	font-family: 'InputFont' !important;	
+}
+input[type=text]::-webkit-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]:-ms-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]::placeholder {
+	font-family: 'InputFont' !important;
+}
+
+.font_queuenumber{
+	font-family: 'QueueNumber' !important;
+}

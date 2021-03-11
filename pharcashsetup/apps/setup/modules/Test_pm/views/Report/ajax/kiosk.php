@@ -1,0 +1,40 @@
+<table id="kiosk_report" class="table table-hover nowrap">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>idcard</th>
+            <th>hn</th>
+            <th>refno</th>
+            <th>ผู้ป่วยใหม่</th>
+            <th>typeid</th>
+            <th>typename</th>
+            <th>payorid</th>
+            <th>payor</th>
+            <th>ประเภทใบนำทาง</th>
+            <th>วันที่ออกใบนำทาง</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        if (isset($Data) && count($Data) > 0) :
+            foreach ($Data as $key => $value) {
+        ?>
+                <tr>
+                    <td><?=$key+1;?></td>
+                    <td><?=$value->idcard;?></td>
+                    <td><?=$value->hn;?></td>
+                    <td><?=$value->refno;?></td>
+                    <td><?=$value->newpatient?'ใช่':'ไม่ใช่';?></td>
+                    <td><?=$value->patienttypeid;?></td>
+                    <td><?=$value->patienttypename;?></td>
+                    <td><?=$value->payorid;?></td>
+                    <td><?=$value->payorname;?></td>
+                    <td><?=$value->worklistgroupname;?></td>
+                    <td><?=$value->cwhen;?></td>
+                </tr>
+        <?php
+            }
+        endif;
+        ?>
+    </tbody>
+</table>

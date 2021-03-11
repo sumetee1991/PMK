@@ -1,0 +1,48 @@
+<table id="management_visit_report" class="table table-hover nowrap">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>idcard</th>
+            <th>hn</th>
+            <th>refno</th>
+            <th>มีขั้นตอนคัดกรอง</th>
+            <th>ผ่านคัดกรอง</th>
+            <th>userที่คัดกรอง</th>
+            <th>idห้องตรวจ</th>
+            <th>ชื่อห้องตรวจ</th>
+            <th>idของอาคาร</th>
+            <th>ชื่ออาคาร</th>
+            <th>วันที่</th>
+            <th>เปิดvisitสำเร็จ</th>
+            <th>visitno</th>
+            <th>userที่เปิดvisit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        if (isset($Data) && count($Data) > 0) :
+            foreach ($Data as $key => $value) {
+        ?>
+                <tr>
+                    <td><?=$key+1;?></td>
+                    <td><?=$value->idcard;?></td>
+                    <td><?=$value->hn;?></td>
+                    <td><?=$value->refno;?></td>
+                    <td><?=$value->selectqueue?'ใช่':'ไม่ใช่';?></td>
+                    <td><?=$value->closequeue?'ใช่':'ไม่ใช่';?></td>
+                    <td><?=$value->closeuser;?></td>
+                    <td><?=$value->room_uid;?></td>
+                    <td><?=$value->room_name;?></td>
+                    <td><?=$value->building_uid;?></td>
+                    <td><?=$value->buildingname;?></td>
+                    <td><?=$value->cwhen;?></td>
+                    <td><?=$value->api_status_name;?></td>
+                    <td><?=isset(json_decode($value->api_status_desc,TRUE)['visitNo'])?json_decode($value->api_status_desc,TRUE)['visitNo']:'';?></td>
+                    <td><?=$value->api_cuser;?></td>
+                </tr>
+        <?php
+            }
+        endif;
+        ?>
+    </tbody>
+</table>

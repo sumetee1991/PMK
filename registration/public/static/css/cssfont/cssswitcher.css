@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Language Selector */
+/*
+Management (Operator Software)  11/11
+Eng Header: Lato Regular
+ไทย Header: Pridi Regular
+Eng Body: Pridi
+ไทย Body: CS Prajad Bold
+** โดยเลขคิวในทุกจุดจะเป็น Lato Bold
+*/
+
+/*Header Main Font-Face(English) : Lato*/
+@font-face { 
+	font-family: 'HeaderFont';
+	font-display: swap;
+    src: url('fonts/Lato/lato-regular-webfont.eot');
+    src: url('fonts/Lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/Lato/lato-regular-webfont.woff') format('woff'),
+         url('fonts/Lato/lato-regular-webfont.ttf') format('truetype'),
+         url('fonts/Lato/lato-regular-webfont.svg#latoregular') format('svg');
+}
+/*Header Thai Font-Face : Pridi */
+@font-face {
+	font-family: 'HeaderFont';
+	font-display: swap;
+    src: url('fonts/Pridi/Pridi-Regular.eot');
+    src: url('fonts/Pridi/Pridi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Pridi/Pridi-Regular.woff2') format('woff2'),
+        url('fonts/Pridi/Pridi-Regular.woff') format('woff'),
+        url('fonts/Pridi/Pridi-Regular.ttf') format('truetype'),
+        url('fonts/Pridi/Pridi-Regular.svg#Pridi-Regular') format('svg');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Body Main Font-Face(English) : Lato */
+@font-face { 
+	font-family: 'BodyFont';
+	font-display: swap;
+    src: url('fonts/Lato/lato-regular-webfont.eot');
+    src: url('fonts/Lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/Lato/lato-regular-webfont.woff') format('woff'),
+         url('fonts/Lato/lato-regular-webfont.ttf') format('truetype'),
+         url('fonts/Lato/lato-regular-webfont.svg#latoregular') format('svg');
+}
+/*Body Thai Font-Face : CS Prajad Bold */
+@font-face {
+	font-family: 'BodyFont';
+	font-display: swap;
+    src: url('fonts/CS_Prajad/CSPraJad-bold.eot');
+    src: url('fonts/CS_Prajad/CSPraJad-bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CS_Prajad/CSPraJad-bold.woff2') format('woff2'),
+        url('fonts/CS_Prajad/CSPraJad-bold.woff') format('woff'),
+        url('fonts/CS_Prajad/CSPraJad-bold.ttf') format('truetype'),
+        url('fonts/CS_Prajad/CSPraJad-bold.svg#CSPraJad-bold') format('svg');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*Input Main Font-Face(English) : Lato Italic Thin*/
+@font-face { 
+	font-family: 'InputFont';
+	font-display: swap;
+    src: url('fonts/Lato/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Lato/Lato-HairlineItalic.woff2') format('woff2'),
+        url('fonts/Lato/Lato-HairlineItalic.woff') format('woff'),
+        url('fonts/Lato/Lato-HairlineItalic.ttf') format('truetype'),
+        url('fonts/Lato/Lato-HairlineItalic.svg#Lato-HairlineItalic') format('svg');
+}
+/*Input Thai Font-Face : CS Prajad Italic Thin (Doesn't Exist So Use ItalicRegular Instead) */
+@font-face {
+	font-family: 'InputFont';
+	font-display: swap;
+    src: url('fonts/CS_Prajad/CSPraJad-Italic.eot');
+    src: url('fonts/CS_Prajad/CSPraJad-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CS_Prajad/CSPraJad-Italic.woff2') format('woff2'),
+        url('fonts/CS_Prajad/CSPraJad-Italic.woff') format('woff'),
+        url('fonts/CS_Prajad/CSPraJad-Italic.ttf') format('truetype'),
+        url('fonts/CS_Prajad/CSPraJad-Italic.svg#CSPraJad-Italic') format('svg');
+	unicode-range: U+0E00-U+0E7F;
+}
+
+/*QueueNumber Font-Face : Lato Bold */
+@font-face { 
+	font-family: 'QueueNumber';
+	font-display: swap;
+    src: url('fonts/Lato/lato-bold-webfont.eot');
+    src: url('fonts/Lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato/lato-bold-webfont.woff2') format('woff2'),
+         url('fonts/Lato/lato-bold-webfont.woff') format('woff'),
+         url('fonts/Lato/lato-bold-webfont.ttf') format('truetype'),
+         url('fonts/Lato/lato-bold-webfont.svg#latobold') format('svg');
+}
+
+h1,h2,h3,h4,h5,h6,th,li{
+	font-family: 'HeaderFont' !important;
+}
+
+.btn_row button{
+	font-family: 'HeaderFont' !important;	
+}
+
+html,body{
+	font-family: 'BodyFont' !important;
+}
+
+input{
+	font-family: 'InputFont' !important;	
+}
+input[type=text]::-webkit-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]:-ms-input-placeholder {
+	font-family: 'InputFont' !important;
+}
+input[type=text]::placeholder {
+	font-family: 'InputFont' !important;
+}
+
+.font_queuenumber{
+	font-family: 'QueueNumber' !important;
+}
